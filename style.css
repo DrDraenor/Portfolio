@@ -1,0 +1,76 @@
+/* General */
+header a, header a:hover, #about-text {
+	color: white;
+}
+.container-fluid {
+	max-width: 90%;
+}
+
+/* Navbar */
+header {
+	position: absolute;
+	width: 100%;
+}
+.navbar {
+	z-index: 1;
+}
+
+/* Main (About Me) */
+#about {
+	background-image: url(./images/Background2.jpg);
+  background-size: cover;
+  background-position: center bottom;
+	position: relative;
+	padding: 270px 0;
+	height: 100vh;
+}
+#about-text {
+	text-align: center;
+}
+#about-text h1 {
+	font-size: 50px;
+}
+#about-text h2 {
+	font-weight: 350;
+}
+
+/* Portfolio */
+#portfolio {
+	padding: 40px 0;
+}
+.portfolio-cat {
+	border: 3px solid #ddd;
+	border-radius: 10px;
+	margin: 40px 0;
+	padding: 20px;
+}
+.project-display {
+	margin-top: 20px;
+}
+
+/* Contact */
+#contact {
+	padding: 80px 0;
+	text-align: center;
+	background-color: black;
+}
+#contact a, #contact h5 {
+	color: white;
+}
+#contact h5 {
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+#social a {
+	font-size: 20px;
+	margin-left: 20px;	
+}
+
+/* Footer */
+footer {
+	border-top: 1px solid #333;
+	text-align: center;
+	background-color: black;
+	color: #bbb;
+	font-weight: 200;
+}
