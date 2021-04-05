@@ -7,20 +7,27 @@ header a, header a:hover, #about-text {
 }
 
 /* Navbar */
-header {
-	position: absolute;
-	width: 100%;
-}
-.navbar {
+#navbar {
 	z-index: 1;
 }
-#xlnavbar .nav-item {
+#xlnavbar .nav-item, #scroll-arrow {
 	border-radius: 8px;
 	transition: background-color .2s;
 }
-#xlnavbar .nav-item:hover {
+#xlnavbar .nav-item:hover, #scroll-arrow:hover {
 	color: #eee;
-	background-color: rgba(120,120,120,0.7);
+	background-color: rgba(120,120,120,0.6);
+}
+/* XS Navbar */
+#xsnavbar {
+  top: 0;
+  left: 0;
+  right: 0;
+	background-color: white;
+}
+#xsnavbar a {
+	color: black;
+	margin: 0 20px;
 }
 
 /* Main (About Me) */
@@ -38,6 +45,10 @@ header {
 }
 #about-text h2 {
 	font-weight: 350;
+}
+#scroll-arrow {
+	padding: 4px 7px 3px;
+	border-radius: 20px;
 }
 
 /* Portfolio */
@@ -59,6 +70,7 @@ header {
 
 /* Contact */
 #contact {
+	border-top: 1px solid black;
 	padding: 80px 0;
 	text-align: center;
 	background-color: #111;
@@ -83,3 +95,10 @@ footer {
 	color: #bbb;
 	font-weight: 200;
 }
+
+@media (min-width: 768px) {
+	#xsnavbar {
+    display: none !important;
+  }
+}
+  

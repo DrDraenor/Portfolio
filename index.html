@@ -18,33 +18,35 @@
   </head>
   <body>
 		<header>
-			<nav class="navbar navbar-expand-md">
+			<nav class="navbar navbar-expand-md position-absolute w-100 p-0" id="navbar">
 				<!-- nav for big screens -->
-				<div class="container-fluid px-0 py-2">
+				<div class="container-fluid d-none d-md-flex px-0 py-2" id="xlnavbar">
 					<div class="navbar-brand">
 						<a href="#"><img src="./logo.png" height="50"/></a>
 						<!--<a href="#">Danilo Re</a>-->
 					</div>
 					
-					<div class="navbar-nav d-none d-md-flex ml-auto" id="xlnavbar">
+					<div class="navbar-nav ml-auto" >
 						<a class="nav-item nav-link mr-3" href="#">About</a>
 						<a class="nav-item nav-link mr-3" href="#portfolio">Portfolio</a>
 						<a class="nav-item nav-link" href="#contact">Contact</a>
 					</div>
-					
-					<!-- button and collapsed menu, for small screens-->
-					<a class="navbar-toggler collapsed ml-auto pr-0" role="button" data-toggle="collapse" href="#xsnavbar" id="xsnavbarToggler"><i class="fas fa-bars"></i></a>
 				</div>
-				
-				<!--
-				<div class="collapse navbar-collapse position-absolute d-md-none" id="xsnavbar">
-					<div class="nav-item" style="text-align:right;"><a class="navbar-toggler ml-auto d-block" role="button" data-toggle="collapse" href="#xsnavbar" style="padding:30px 20px 20px 0; width:20px;"><i class="fas fa-times"></i></a></div>
-					<a class="nav-item nav-link d-block" href="#">About Me</a>
+		
+				<!-- button and collapsed menu, for small screens-->
+				<div class="navbar-brand d-md-none position-relative ml-4 mt-2" style="z-index:1;">
+					<a href="#"><img src="./logo.png" height="40"/></a>
+					<!--<a href="#">Danilo Re</a>-->
+				</div>
+				<a class="navbar-toggler collapsed ml-auto pr-0 mr-4" role="button" data-toggle="collapse" href="#xsnavbar" id="xsnavbarToggler"><i class="fas fa-bars"></i></a>
+				<div class="collapse navbar-collapse d-md-none position-absolute" id="xsnavbar">
+					<div class="nav-item" style="text-align:right;"><a class="navbar-toggler ml-auto d-block" role="button" data-toggle="collapse" href="#xsnavbar" style="padding:20px 20px 20px 0; width:20px;"><i class="fas fa-times"></i></a></div>
+					<a class="nav-item nav-link d-block" href="#">About</a>
 					<a class="nav-item nav-link d-block" href="#">Portfolio</a>
 					<a class="nav-item nav-link d-block" href="#">Contact</a>
 				</div>
-				-->
 			</nav>
+			
 		</header>
 		
 		
@@ -54,7 +56,7 @@
 				<h2>I am a Full-Stack Web Developer</h2>
 			</div>
 			
-			<a href="#portfolio" style="color:white; position: absolute; bottom: 40px;"><i class="fas fa-chevron-down"></i></a>
+			<a href="#portfolio" style="color:white; position: absolute; bottom: 40px;" id="scroll-arrow"><i class="fas fa-chevron-down"></i></a>
 		</div>
 		
 		<div class="container-fluid" id="portfolio">
@@ -62,22 +64,22 @@
 			<div class="portfolio-cat" id="clones">
 				<h3>Clones</h3>
 				<div class="row project-display">
-					<img class="col-7 img" src="./images/Apple_Clone.jpg" alt="" />
-					<div class="col-5 desc">
+					<img class="col-12 col-md-7 img" src="./images/Apple_Clone.jpg" alt="" />
+					<div class="col-12 col-md-5 desc">
 						<h4>Apple Clone</h4>
 						<p>Clone of the Apple landing page, using only Html and CSS.</p>
 					</div>
 				</div>
 				<div class="row project-display">
-					<img class="col-7 img" src="./images/Airbnb_Clone.jpg" alt="" />
-					<div class="col-5 desc">
+					<img class="col-12 col-md-7 img" src="./images/Airbnb_Clone.jpg" alt="" />
+					<div class="col-12 col-md-5 desc">
 						<h4>Airbnb Clone</h4>
 						<p>Clone of the Airbnb landing page, using bootstrap.</p>
 					</div>
 				</div>
 				<div class="row project-display">
-					<img class="col-7 img" src="./images/Airbnb_Newsroom_Clone.jpg" alt="" />
-					<div class="col-5 desc">
+					<img class="col-12 col-md-7 img" src="./images/Airbnb_Newsroom_Clone.jpg" alt="" />
+					<div class="col-12 col-md-5 desc">
 						<h4>Airbnb Newsroom Clone</h4>
 						<p>Clone of Airbnb's Newsroom page, using bootstrap.</p>
 					</div>
@@ -86,8 +88,8 @@
 			<div class="portfolio-cat" id="original-projects">
 				<h3>Original Projects</h3>
 				<div class="row project-display">
-					<img class="col-7 img" src="./images/1920x1080_placeholder.png" alt="" />
-					<div class="col-5 desc">
+					<img class="col-12 col-md-7 img" src="./images/1920x1080_placeholder.png" alt="" />
+					<div class="col-12 col-md-5 desc">
 						<h4>Original Project 1</h4>
 						<p>Original project, using bootstrap.</p>
 					</div>
