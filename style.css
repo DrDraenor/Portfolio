@@ -15,7 +15,7 @@ header a, header a:hover, #about-text {
 	transition: background-color .2s;
 }
 #xlnavbar .nav-item:hover, #scroll-arrow:hover {
-	color: #eee;
+	/*color: #eee;*/
 	background-color: rgba(120,120,120,0.6);
 }
 /* XS Navbar */
@@ -48,7 +48,7 @@ header a, header a:hover, #about-text {
 }
 #scroll-arrow {
 	padding: 4px 7px 3px;
-	border-radius: 20px;
+	border-radius: 50%;
 }
 
 /* Portfolio */
@@ -66,7 +66,9 @@ header a, header a:hover, #about-text {
 .project-display {
 	margin-top: 20px;
 }
-
+.img img {
+	width:100%;
+}
 
 /* Contact */
 #contact {
