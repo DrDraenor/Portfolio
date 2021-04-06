@@ -1,4 +1,8 @@
 /* General */
+@font-face {
+  font-family: MTCorsiva;
+  src: url(./MTCORSVA.ttf);
+}
 header a, header a:hover, #about-text {
 	color: white;
 }
