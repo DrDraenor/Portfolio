@@ -1,4 +1,7 @@
 /* General */
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: MTCorsiva;
   src: url(./MTCORSVA.ttf);
@@ -21,6 +24,12 @@ header a, header a:hover, #about-text {
 #xlnavbar .nav-item:hover, #scroll-arrow:hover {
 	/*color: #eee;*/
 	background-color: rgba(120,120,120,0.6);
+}
+#xlnavbar .navbar-brand, #xlnavbar .nav-item, #scroll-arrow {
+	transition: transform .2s;
+}
+#xlnavbar .navbar-brand:hover, #xlnavbar .nav-item:hover, #scroll-arrow:hover {
+	transform: scale(1.1);
 }
 /* XS Navbar */
 #xsnavbar {
