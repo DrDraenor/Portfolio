@@ -6,7 +6,7 @@ html {
   font-family: MTCorsiva;
   src: url(./MTCORSVA.ttf);
 }
-header a, header a:hover, #about-text {
+header a, header a:hover, #about-text, .desc a {
 	color: white;
 }
 .container-fluid {
@@ -21,7 +21,10 @@ header a, header a:hover, #about-text {
 	border-radius: 8px;
 	transition: background-color .2s;
 }
-#xlnavbar .nav-item:hover, #scroll-arrow:hover {
+#xlnavbar .nav-item {
+	font-weight: 500;
+}
+#xlnavbar .nav-item:hover {
 	/*color: #eee;*/
 	background-color: rgba(120,120,120,0.6);
 }
@@ -37,6 +40,8 @@ header a, header a:hover, #about-text {
   left: 0;
   right: 0;
 	background-color: white;
+	height: 100vh;
+	transition: height .2s;
 }
 #xsnavbar a {
 	color: black;
@@ -50,6 +55,7 @@ header a, header a:hover, #about-text {
   background-position: center bottom;
 	position: relative;
 	padding: 270px 0;
+	width: 100%;
 	height: 100vh;
 	text-align: center;
 }
@@ -60,8 +66,10 @@ header a, header a:hover, #about-text {
 	font-weight: 350;
 }
 #scroll-arrow {
-	padding: 4px 7px 3px;
-	border-radius: 50%;
+	font-size: 25px;
+	color: white; 
+	position: absolute; 
+	bottom: 40px;
 }
 
 /* Portfolio */
@@ -81,6 +89,10 @@ header a, header a:hover, #about-text {
 }
 .img img {
 	width:100%;
+	transition: transform .2s;
+}
+.img:hover img {
+	transform: scale(1.01)
 }
 
 /* Contact */
@@ -115,5 +127,30 @@ footer {
 	#xsnavbar {
     display: none !important;
   }
+}
+@media (max-width: 767px) {
+	.container-fluid {
+		max-width: 98%;
+	}
+	#about {
+		padding: 130px 0;
+	}
+	#about-text h1 {
+		font-size: 40px;
+	}
+	#about-text h2 {
+		font-weight: 350;
+	}
+	#name {
+		display: block;
+		margin: 15px 0;
+	}
+	#portfolio {
+		padding: 20px 0;
+	}
+	.portfolio-cat {
+		padding: 20px 10px;
+		margin: 20px 0;
+	}
 }
   

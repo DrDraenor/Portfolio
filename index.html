@@ -41,23 +41,24 @@
 				<a class="navbar-toggler collapsed ml-auto pr-0 mr-4" role="button" data-toggle="collapse" href="#xsnavbar" id="xsnavbarToggler"><i class="fas fa-bars"></i></a>
 				<div class="collapse navbar-collapse d-md-none position-absolute" id="xsnavbar">
 					<div class="nav-item" style="text-align:right;"><a class="navbar-toggler ml-auto d-block" role="button" data-toggle="collapse" href="#xsnavbar" style="padding:20px 20px 20px 0; width:20px;"><i class="fas fa-times"></i></a></div>
-					<a class="nav-item nav-link d-block" href="#">About</a>
-					<a class="nav-item nav-link d-block" href="#">Portfolio</a>
-					<a class="nav-item nav-link d-block" href="#">Contact</a>
+					<a class="nav-item nav-link d-block mt-2" href="#">About</a>
+					<a class="nav-item nav-link d-block" href="#portfolio">Portfolio</a>
+					<a class="nav-item nav-link d-block" href="#contact">Contact</a>
 				</div>
 			</nav>
-			
 		</header>
 		
 		
 		<div id="about">
 			<div id="about-text">
-				<h1 class="mb-3">My name is <span style="font-family: MTCorsiva; font-size: 80px;">D</span><span style="font-family: MTCorsiva; font-size: 50px;">anilo</span> <span style="font-family: MTCorsiva; font-size: 80px;">R</span><span style="font-family: MTCorsiva; font-size: 50px;">e</span></h1>
+				<h1 class="mb-3">My name is <span style="font-family: MTCorsiva;" id="name"><span style="font-size: 80px;">D</span><span style="font-size: 50px;">anilo</span> <span style="font-size: 80px;">R</span><span style="font-size: 50px;">e</span></span></h1>
 				<h2>I am a Full-Stack Web Developer</h2>
-			</div>
-			
-			<a href="#portfolio" style="color:white; position: absolute; bottom: 40px;" id="scroll-arrow"><i class="fas fa-chevron-down"></i></a>
+			</div>	
 		</div>
+		<div style="text-align:center;">
+			<a href="#portfolio" id="scroll-arrow"><i class="fas fa-chevron-down"></i></a>
+		</div>
+		
 		
 		<div class="container-fluid" id="portfolio">
 			<h2>Portfolio</h2>
@@ -66,14 +67,14 @@
 				<div class="row project-display">
 					<a class="col-12 col-md-7 img" href="https://apple-clone-danilo-re.netlify.app" target="_blank"><img src="./images/Apple_Clone.jpg" alt=""/></a>
 					<div class="col-12 col-md-5 desc">
-						<h4>Apple Clone</h4>
+						<a href="https://apple-clone-danilo-re.netlify.app" target="_blank"><h4>Apple Clone</h4></a>
 						<p>Clone of the Apple landing page, using only Html and CSS.</p>
 					</div>
 				</div>
 				<div class="row project-display">
 					<a class="col-12 col-md-7 img" href="https://airbnb-newsroom-clone-danilo-re.netlify.app" target="_blank"><img src="./images/Airbnb_Newsroom_Clone.jpg" alt=""/></a>
 					<div class="col-12 col-md-5 desc">
-						<h4>Airbnb Newsroom Clone</h4>
+						<a href="https://airbnb-newsroom-clone-danilo-re.netlify.app" target="_blank"><h4>Airbnb Newsroom Clone</h4></a>
 						<p>Clone of Airbnb's Newsroom page, using bootstrap.</p>
 					</div>
 				</div>
@@ -83,7 +84,7 @@
 				<div class="row project-display">
 					<a class="col-12 col-md-7 img" href="#" target="_blank"><img src="./images/1920x1080_placeholder.png" alt=""/></a>
 					<div class="col-12 col-md-5 desc">
-						<h4>Original Project 1</h4>
+						<a href="#" target="_blank"><h4>Original Project 1</h4></a>
 						<p>Original project, using bootstrap.</p>
 					</div>
 				</div>
