@@ -6,34 +6,33 @@ html {
   font-family: MTCorsiva;
   src: url(./MTCORSVA.ttf);
 }
-header a, header a:hover, #about-text, .desc a {
+header a, header a:hover, #about-text, .desc a, #scroll-arrow, .portfolio-cat, #contact * {
 	color: white;
+}
+#xlnavbar .navbar-brand, #xlnavbar .nav-item, #scroll-arrow, #social i {
+	transition: transform .2s;
+}
+#xlnavbar .navbar-brand:hover, #xlnavbar .nav-item:hover, #scroll-arrow:hover, #social i:hover {
+	transform: scale(1.1);
 }
 .container-fluid {
 	max-width: 90%;
+	margin: 0 auto;
 }
 
 /* Navbar */
 #navbar {
 	z-index: 1;
 }
-#xlnavbar .nav-item, #scroll-arrow {
-	border-radius: 8px;
-	transition: background-color .2s;
-}
 #xlnavbar .nav-item {
+	border-radius: 8px;
 	font-weight: 500;
+	background-color: none;
 }
 #xlnavbar .nav-item:hover {
-	/*color: #eee;*/
-	background-color: rgba(120,120,120,0.6);
+	background-color: rgba(120,120,120,0.3);
 }
-#xlnavbar .navbar-brand, #xlnavbar .nav-item, #scroll-arrow {
-	transition: transform .2s;
-}
-#xlnavbar .navbar-brand:hover, #xlnavbar .nav-item:hover, #scroll-arrow:hover {
-	transform: scale(1.1);
-}
+
 /* XS Navbar */
 #xsnavbar {
   top: 0;
@@ -44,22 +43,29 @@ header a, header a:hover, #about-text, .desc a {
 	transition: height .2s;
 }
 #xsnavbar a {
+	font-size: 20px;
+	font-weight: 500;
 	color: black;
-	margin: 0 20px;
+	margin: 0 12px;
 }
 #xsnavbar.collapsed {
 	height: 0;
 }
+
 /* Main (About Me) */
 #about {
 	background-image: url(./images/Background2.jpg);
   background-size: cover;
   background-position: center bottom;
 	position: relative;
-	padding: 35vh 0 0;
 	width: 100%;
 	height: 100vh;
+	padding: 35vh 0;
+	overflow: hidden;
+}
+#about-text {
 	text-align: center;
+	padding: 0 20px;
 }
 #about-text h1 {
 	font-size: 50px;
@@ -67,9 +73,17 @@ header a, header a:hover, #about-text, .desc a {
 #about-text h2 {
 	font-weight: 350;
 }
+#name {
+	font-family: MTCorsiva;
+}
+#name .uppercase {
+	font-size: 80px;
+}
+#name .lowercase {
+	font-size: 50px;
+}
 #scroll-arrow {
 	font-size: 25px;
-	color: white; 
 	position: absolute; 
 	bottom: 40px;
 	left: 49%;
@@ -85,13 +99,12 @@ header a, header a:hover, #about-text, .desc a {
 	margin: 40px 0;
 	padding: 20px;
 	background-color: #111;
-	color: white;
 }
 .project-display {
 	margin-top: 20px;
 }
 .img img {
-	width:100%;
+	width: 100%;
 	transition: transform .2s;
 }
 .img:hover img {
@@ -108,9 +121,6 @@ header a, header a:hover, #about-text, .desc a {
 	text-align: center;
 	background-color: #111;
 }
-#contact a, #contact h5, #contact h2 {
-	color: white;
-}
 #contact h2 {
 	margin-bottom: 40px;
 }
@@ -125,7 +135,7 @@ header a, header a:hover, #about-text, .desc a {
 
 /* Footer */
 footer {
-	border-top: 1px solid #333;
+	border-top: 1px solid #222;
 	text-align: center;
 	background-color: black;
 	color: #bbb;
@@ -142,7 +152,7 @@ footer {
 		max-width: 98%;
 	}
 	#about {
-		padding: 120px 0 0;
+		padding: 20vh 0;
 	}
 	#about-text h1 {
 		font-size: 40px;
@@ -158,7 +168,7 @@ footer {
 		left: 48%;
 	}
 	#portfolio {
-		padding: 20px 0 0;
+		padding: 20px 5px 0;
 	}
 	.portfolio-cat {
 		padding: 20px 10px 7px;
@@ -168,4 +178,16 @@ footer {
 		margin-top: 10px;
 	}
 }
-  
+@media (max-width: 270px) {
+	#about {
+		padding: 28vh 0;
+	}
+	.redundant-text, #about-text h2 {
+		display: none;
+	}
+}
+@media (max-height: 400px) {
+	#scroll-arrow {
+		display: none;
+	}
+}	
