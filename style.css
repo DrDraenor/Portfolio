@@ -60,7 +60,7 @@ header a, header a:hover, #about-text, .desc a, #scroll-arrow, .portfolio-cat, #
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	padding: 35vh 0;
+	padding: 35vh 0 0;
 	overflow: hidden;
 }
 #about-text {
@@ -168,7 +168,7 @@ footer {
 		left: 48%;
 	}
 	#portfolio {
-		padding: 20px 5px 0;
+		padding: 20px 0 0;
 	}
 	.portfolio-cat {
 		padding: 20px 10px 7px;
@@ -180,7 +180,7 @@ footer {
 }
 @media (max-width: 270px) {
 	#about {
-		padding: 28vh 0;
+		padding: 28vh 0 0;
 	}
 	.redundant-text, #about-text h2 {
 		display: none;
