@@ -152,7 +152,8 @@ footer {
 		max-width: 98%;
 	}
 	#about {
-		padding: 20vh 0;
+		/*padding: 20vh 0;*/
+		padding: 120px 0;
 	}
 	#about-text h1 {
 		font-size: 40px;
