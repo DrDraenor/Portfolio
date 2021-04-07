@@ -47,14 +47,16 @@ header a, header a:hover, #about-text, .desc a {
 	color: black;
 	margin: 0 20px;
 }
-
+#xsnavbar.collapsed {
+	height: 0;
+}
 /* Main (About Me) */
 #about {
 	background-image: url(./images/Background2.jpg);
   background-size: cover;
   background-position: center bottom;
 	position: relative;
-	padding: 270px 0;
+	padding: 35vh 0 0;
 	width: 100%;
 	height: 100vh;
 	text-align: center;
@@ -70,6 +72,7 @@ header a, header a:hover, #about-text, .desc a {
 	color: white; 
 	position: absolute; 
 	bottom: 40px;
+	left: 49%;
 }
 
 /* Portfolio */
@@ -139,7 +142,7 @@ footer {
 		max-width: 98%;
 	}
 	#about {
-		padding: 130px 0;
+		padding: 120px 0 0;
 	}
 	#about-text h1 {
 		font-size: 40px;
@@ -151,12 +154,18 @@ footer {
 		display: block;
 		margin: 15px 0;
 	}
+	#scroll-arrow {
+		left: 48%;
+	}
 	#portfolio {
-		padding: 20px 0;
+		padding: 20px 0 0;
 	}
 	.portfolio-cat {
-		padding: 20px 10px;
+		padding: 20px 10px 7px;
 		margin: 20px 0;
+	}
+	.desc {
+		margin-top: 10px;
 	}
 }
   
