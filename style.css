@@ -94,6 +94,9 @@ header a, header a:hover, #about-text, .desc a {
 .img:hover img {
 	transform: scale(1.01)
 }
+.desc p a {
+	font-weight: 500;
+}
 
 /* Contact */
 #contact {
@@ -102,15 +105,18 @@ header a, header a:hover, #about-text, .desc a {
 	text-align: center;
 	background-color: #111;
 }
-#contact a, #contact h5 {
+#contact a, #contact h5, #contact h2 {
 	color: white;
+}
+#contact h2 {
+	margin-bottom: 40px;
 }
 #contact h5 {
 	font-weight: 300;
 	margin-bottom: 40px;
 }
 #social a {
-	font-size: 20px;
+	font-size: 25px;
 	margin-left: 20px;	
 }
 
